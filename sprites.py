@@ -1,19 +1,19 @@
 class Sprite:
 
-  def __init__(self, imgLocation, visibilityStatus):
+  def __init__(self, imgLocation, visibilityStatus, layer):
     self.imgLocation = imgLocation
     self.visibilityStatus = visibilityStatus 
+    self.layer = layer
 
 
-class Background(Sprite):
+class Room(Sprite):
   
-  def __init__(self, imgLocation, visibilityStatus):
-    super().__init__(imgLocation, visibilityStatus)
-    self.layer = 0
+  def __init__(self, imgLocation, visibilityStatus, layer, connections, active):
+    super().__init__(imgLocation, visibilityStatus, layer)
 
     
 class God(Sprite):
   
-  def __init__(self, imgLocation, visibilityStatus, currentRoom):
-    super().__init__(imgLocation, visibilityStatus)
-    self.layer = 1
+  def __init__(self, imgLocation, visibilityStatus, layer, currentRoom):
+    super().__init__(imgLocation, visibilityStatus, layer)
+
