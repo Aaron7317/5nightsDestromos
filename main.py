@@ -13,8 +13,7 @@ except:
 window = pygame.display.set_mode((500, 500))
 pygame.display.set_caption("5 Nights at Destromos's")
 
-def drawGame(sprites):   
-  pass
+
 
 running = True
 while running:
