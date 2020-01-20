@@ -1,5 +1,6 @@
-class Sprite:
+from pygame import image
 
+class Sprite:
 
   def __init__(self, imgLocation, visibilityStatus, layer):
     self.imgLocation = imgLocation
@@ -7,10 +8,9 @@ class Sprite:
     self.layer = layer
 
 
-
 class Room(Sprite):
   
-  def __init__(self, imgLocation, visibilityStatus, layer, connections, active):
+  def __init__(self, imgLocation, visibilityStatus, layer, connections, active, foreground):
     super().__init__(imgLocation, visibilityStatus, layer)
 
     
