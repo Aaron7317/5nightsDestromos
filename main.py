@@ -10,7 +10,7 @@ try:
 except:
   pass
 
-window = pygame.display.set_mode((500, 500))
+window = pygame.display.set_mode((600, 600))
 pygame.display.set_caption("5 Nights at Destromos's")
 
 
